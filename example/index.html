@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
 <head>
+  <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+  <META HTTP-EQUIV="Expires" CONTENT="-1">
   <title>Ember Addon Example</title>
   <style>
   body {
@@ -37,6 +39,7 @@
   <script>
     require = {
       baseUrl: '../bower_components',
+      urlArgs: '?bust='+Date.now(),
       packages: [
         {name: 'app', location: '../app'},
         {name: 'my-addon', location: '../addon'}
